@@ -110,6 +110,8 @@ void listProcesses() {
         std::string pid = entry -> d_name;
         printProcess(pid);
     }
+
+    closedir(procDir);
 }
 
 int main() {
