@@ -5,6 +5,7 @@
 #include <dirent.h>
 #include <pwd.h>
 
+
 DIR* getProcDir() {
     DIR* procDir = opendir("/proc");
     if (!procDir) {
@@ -93,7 +94,6 @@ void printProcess(std::string pid) {
             << username << "\n";
     }
 }
-
 
 void listProcesses() {
     DIR* procDir = getProcDir();
