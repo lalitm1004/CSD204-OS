@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
       file_no = 0;
 
       bzero(dest_file_name, FNAME_SIZE);
-      sprintf(dest_file_name, "disk-files/foo%d.pdf", file_no);
+      sprintf(dest_file_name, "tmp/foo%d.pdf", file_no);
 
       fp = fopen(dest_file_name, "rb");
       if (fp == NULL) {
@@ -41,3 +41,4 @@ int main(int argc, char *argv[])
        fclose(fp);
     }
 }
+

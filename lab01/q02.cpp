@@ -9,6 +9,8 @@ struct CPUInfo {
     int cpu_cores;
 };
 
+// TODO: OS info
+
 std::vector<CPUInfo> parse_cpu_info() {
     std::ifstream file("/proc/cpuinfo");
 
